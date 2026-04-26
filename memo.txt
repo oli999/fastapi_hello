@@ -1,0 +1,18 @@
+# python 가상환경 만들기
+python -m venv venv
+
+# 가상 환경 활성화
+.\venv\Scripts\activate
+
+# 필요한 페키지 설치
+pip install fastapi uvicorn
+
+# app 시작하기 
+uvicorn main:app --reload
+
+# 의존성 기록하기
+pip freeze > requirements.txt
+
+# 의존성 설치하기
+pip install -r requirements.txt
+
